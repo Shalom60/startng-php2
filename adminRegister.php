@@ -29,25 +29,7 @@
 	<form action="regProcessAdmin.php" method="POST" id="form">
 	<p> Please fill out the details bellow. All fields are required.</p>
 	 <p1> <?php 
-	if(isset($_SESSION['firstnameErr']) && !empty($_SESSION['firstnameErr'])){
-		echo "<span style='color:red;'>" . $_SESSION['firstnameErr']. " </span>";
-		session_destroy();
-	}
-		if(isset($_SESSION['lastnameErr']) && !empty($_SESSION['lastnameErr'])){
-			echo "<span style='color:red;'>" . $_SESSION['lastnameErr']. " </span>";
-			session_destroy();
-		}
-		if(isset($_SESSION['emailErr']) && !empty($_SESSION['emailErr'])){
-			echo "<span style='color:red;'>" . $_SESSION['emailErr']. " </span>";
-			session_destroy();
-		}
-		if(isset($_SESSION['error2']) && !empty($_SESSION['error2'])){
-			echo "<span style='color:red;'>" . $_SESSION['error2']. " </span>";
-			session_destroy();
-		}
-		if(isset($_SESSION['error3']) && !empty($_SESSION['error3'])){
-			echo "<span style='color:red;'>" . $_SESSION['error3']. " </span>";
-			session_destroy();
+	
 		}
 	if(isset($_SESSION['error']) && !empty($_SESSION['error'])){
 		echo "<span style='color:red;'>" . $_SESSION['error']. " </span>";

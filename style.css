@@ -1,0 +1,121 @@
+
+.header{
+    margin: 5px;
+    background-color: black;
+    height: 100px;
+
+}
+#name{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 65px;
+    text-decoration: none;
+    font-family: "Century Gothic";
+    font-size: 25px;
+
+}
+
+#topmenu{
+    color: white;
+    text-decoration-color: white;
+    float: right;
+   margin: 20px ;
+    margin-top: 25px;
+    text-decoration: none;
+    font-family: "Century Gothic";
+    font-size: 15px;
+
+}
+a{
+    color: silver;
+}
+
+a:link{
+text-decoration: none;
+}
+ a:visited{
+    
+    text-decoration: none;
+} 
+a:hover{
+    
+    text-decoration: none;
+    border-bottom: white;
+    border-top: transparent;
+    border-left:transparent;
+    border-right:transparent;
+    border-style: outset;
+    border-width: medium;
+    transition-timing-function: ease-in-out;
+    transition:border 0s;
+}
+a:active{
+    text-decoration: none;
+}
+h{
+    position: absolute;
+    margin: 80px;
+    margin-left: 45%;
+    margin-top:46px ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+.container{
+    margin: 120px;
+    border-style: solid;
+    height: 15pc;
+}
+p{
+    margin: 8px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+#cntus{
+    color: white;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10px;
+}
+#abtus{
+    color: white;
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 10px;
+}
+#FAQ{
+    color: white;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.img-icon{
+    max-width: 8%;
+    max-height: 8%;
+    padding-right: 1%;
+    display: block;
+}
+.img-fbicon{
+    max-width: 30px;
+    margin-top: 0%;
+    max-height: 10%;
+    display: block;
+}
+.img-gmailicon{
+    max-width: 5%;
+    max-height: 5%;
+    padding-right: 1%;
+    display: block;
+}
+dd{
+    display: flex;
+}
+
+.footer{
+    margin:  5px;
+    background-color: black;
+    height: 180px;
+    
+}
