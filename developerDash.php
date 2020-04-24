@@ -44,7 +44,7 @@ require_once("functions/user.php");
               </table>    
             <?php }
             }
-            else { echo " You have no pending appointments";
+            else { echo "<span style ='font-size:25px;'>". " You have no pending appointments.". "</span>";
                                                    
              } 
             }
@@ -75,7 +75,7 @@ require_once("functions/user.php");
                     </table>    
                   <?php }
                   }
-                   else { echo " You have no pending appointments";
+                   else { echo "<span style ='font-size:25px;'>". " You have no pending appointments.". "</span>";
                                                    
                    } 
                   } 
@@ -105,7 +105,7 @@ require_once("functions/user.php");
                               </table>    
                             <?php }
                             }
-                             else { echo " You have no pending appointments";
+                             else { echo "<span style ='font-size:25px;'>". " You have no pending appointments.". "</span>";
                                                    
                              } 
                              }
@@ -138,7 +138,7 @@ require_once("functions/user.php");
                                       <?php 
                                     }
                                     }   
-                                    else { echo " You have no pending appointments";
+                                    else { echo "<span style ='font-size:25px;'>". " You have no pending appointments.". "</span>";
                                                    
                                     } } ?>
         
