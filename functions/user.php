@@ -37,3 +37,18 @@ function saveUser($userObject){
 file_put_contents("db/users/".$userObject['email'].".json", json_encode($userObject ));
 }
 ?>
+ <?php   function table_head(){?>
+                <table border="1px solid black"  style="width:100%"> 
+                <tr>
+                <th style="width:25px"> s/n</th>
+                <th style="width:200px"> Name</th>
+                <th style="width:200px"> Email address</th>
+                <th style="width:200px"> Date of appointment</th>
+                <th style="width:200px"> Time</th>
+                <th style="width:200px"> Nature of appointment</th>
+                <th style="width:200px"> Initial complaint </th>
+                </tr>  </table>
+             <?php 
+              }
+             
+    ?>
