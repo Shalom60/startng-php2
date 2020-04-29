@@ -66,7 +66,7 @@ require_once("functions/alert.php");
 		echo "selected";
 	}
 	?>
-		>Mobile development</option>
+		>Mobile Development</option>
 		<option  <?php
 	if(isset($_SESSION['catgry']) && $_SESSION['catgry']== 'Hardware/Electronic Engineer'){
 		echo "selected";
