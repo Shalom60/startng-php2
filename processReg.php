@@ -50,7 +50,7 @@ if($errorCount > 0){
   $userId = ($usersCount-1);
  
   //adding time of registration
-date_default_timezone_set('Africa/Nigeria');
+date_default_timezone_set('Africa/Lagos');
 $reg_date = date('d-m-y, g:i a' );
 
 	$userObject = [
