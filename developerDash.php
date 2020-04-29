@@ -26,7 +26,7 @@ require_once("functions/user.php");
             $file = scandir("db/$department[0]/");
             $counter = count($file);
             if($counter>2){
-            for($i=1; $i<$counter-2; $i++){
+            for($i=1; $i<$counter-1; $i++){
             $appointments_String= file_get_contents("db/$department[0]/".$i.".json");
             $fileObject = json_decode($appointments_String);
              
@@ -57,7 +57,7 @@ require_once("functions/user.php");
                $file = scandir("db/$department[1]/");
                 $counter = count($file);
                 if($counter>2){
-                   for($i=1; $i<$counter-2; $i++){
+                   for($i=1; $i<$counter-1; $i++){
                   $appointments_String= file_get_contents("db/$department[1]/".$i.".json");
                   $fileObject =json_decode($appointments_String);
                                     
@@ -87,7 +87,7 @@ require_once("functions/user.php");
                             $file = scandir("db/$department[2]/");
                             $counter = count($file);
                             if($counter>2){
-                            for($i=1; $i<$counter-2; $i++){
+                            for($i=1; $i<$counter-1; $i++){
                             $appointments_String= file_get_contents("db/$department[2]/".$i.".json");
                             $fileObject = json_decode($appointments_String);
                           
@@ -119,7 +119,7 @@ require_once("functions/user.php");
                                 $file = scandir("db/$department[3]/");
                                 $counter = count($file);
                                 if($counter>2){
-                                for($i=1; $i<$counter-2; $i++){
+                                for($i=1; $i<$counter-1; $i++){
                                  $appointments_String= file_get_contents("db/$department[3]/".$i.".json");
                                     $fileObject = json_decode($appointments_String);
                                       
