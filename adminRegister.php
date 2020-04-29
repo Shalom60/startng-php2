@@ -30,7 +30,7 @@
 	<p> Please fill out the details bellow. All fields are required.</p>
 	 <p1> <?php 
 	
-		}
+		
 	if(isset($_SESSION['error']) && !empty($_SESSION['error'])){
 		echo "<span style='color:red;'>" . $_SESSION['error']. " </span>";
 		session_destroy();
