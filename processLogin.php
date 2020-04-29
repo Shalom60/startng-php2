@@ -33,6 +33,7 @@ else{
 			if($pswrdFromUser == $pswrdFromDb) {
 				//set time and redirect to dashboard  
 			
+                                date-default_timezone_set("Africa/Lagos");
 				$login_time = date('d-m-y, g:i a');
                	$_SESSION['logged_in'] = $userObject->id;
 				$_SESSION['fullName'] = $userObject->firstname. " " .$userObject->lastname;
