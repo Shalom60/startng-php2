@@ -51,7 +51,7 @@ if($errorCount > 0){
  
   //adding time of registration
 date_default_timezone_set('Africa/Lagos');
-$reg_date = date('d-m-y, g:i a e' );
+$reg_date = date('d-m-y, g:ia e' );
 
 	$userObject = [
 		'id' =>$userId,
