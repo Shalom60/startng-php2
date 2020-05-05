@@ -1,30 +1,21 @@
-<?php 
+<?php  include_once("lib/header.php");
 
-    include_once("lib/header.php")
+require_once("functions/alert.php");
+require_once("functions/user.php");
 ?>
 <link href="css/login.css"  rel="stylesheet"/>
-    <form action="loginprocess.php" method="POST">
+    <form action="processLogin.php" method="POST">
 	<h1>Login to your account</h1>
     <p1> <?php
-    if(isset($_SESSION['message']) && !empty($_SESSION['message'])){
-		echo  $_SESSION['message'] ;
-		session_destroy();
-    }
-	if(isset($_SESSION['error3']) && !empty($_SESSION['error3'])){
-		echo "<span style='color:red;'>" . $_SESSION['error3']. " </span>";
-		session_destroy();
-    }
-    if(isset($_SESSION['error4']) && !empty($_SESSION['error4'])){
-		echo "<span style='color:red;'>" . $_SESSION['error4']. " </span>";
-		session_destroy();
-	}
+
+print_alert();
 	?>
     </p1><br>
 	<p1><label>Email</label><br>
     <input <?php	
             if(isset($_SESSION['email']) && !empty($_SESSION['email'])){
-		echo $_SESSION['email'];
-		$_SESSION['email']. "";
+				echo "value=" .$_SESSION['email'];
+				$_SESSION['email']. "";
     
 	} ?>
      type="text" name="email" placeholder="enter your email address" ><br>

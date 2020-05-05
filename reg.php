@@ -1,32 +1,14 @@
 <?php 
 include_once("lib/header.php");
+require_once("functions/alert.php");
 ?>
    <div id="section">
 	<h1>Register and join us at DevClub</h1>
 	<link href="css/reg.css"  rel="stylesheet"/> 
-	<form action="regprocess.php" method="POST" id="form">
+	<form action="processReg.php" method="POST" id="form">
 	<p> Please fill out the details bellow. All fields are required.</p>
 	<p1> <?php
-	if(isset($_SESSION['firstnameErr']) && !empty($_SESSION['firstnameErr'])){
-		echo "<span style='color:red;'>" . $_SESSION['firstnameErr']. " </span>";
-		session_destroy();
-	}
-		if(isset($_SESSION['lastnameErr']) && !empty($_SESSION['lastnameErr'])){
-			echo "<span style='color:red;'>" . $_SESSION['lastnameErr']. " </span>";
-			session_destroy();
-		}
-		if(isset($_SESSION['emailErr']) && !empty($_SESSION['emailErr'])){
-			echo "<span style='color:red;'>" . $_SESSION['emailErr']. " </span>";
-			session_destroy();
-		}
-		if(isset($_SESSION['error2']) && !empty($_SESSION['error2'])){
-			echo "<span style='color:red;'>" . $_SESSION['error2']. " </span>";
-			session_destroy();
-		}
-	if(isset($_SESSION['error']) && !empty($_SESSION['error'])){
-		echo "<span style='color:red;'>" . $_SESSION['error']. " </span>";
-		session_destroy();
-	}
+	 print_alert();
 	
 	?> </p1><br>
 	<p1><label>First name</label><br>
@@ -109,17 +91,17 @@ include_once("lib/header.php");
 	?>
 		>Web Development </option>
 		<option  <?php
-	if(isset($_SESSION['catgry']) && $_SESSION['catgry']== 'Mobile development'){
+	if(isset($_SESSION['catgry']) && $_SESSION['catgry']== 'Mobile Development'){
 		echo "selected";
 	}
 	?>
-		>Mobile development</option>
+		>Mobile Development</option>
 		<option  <?php
-	if(isset($_SESSION['catgry']) && $_SESSION['catgry']== 'Hardware/Electronic engineer'){
+	if(isset($_SESSION['catgry']) && $_SESSION['catgry']== 'Hardware/Electronic Engineer'){
 		echo "selected";
 	}
 	?>
-		>Hardware/Electronic engineer</option>
+		>Hardware/Electronic Engineer</option>
 	</select><br>
 </p1>
 <br><button type="submit"> <b>Register</b></button>

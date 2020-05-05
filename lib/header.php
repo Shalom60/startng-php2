@@ -15,11 +15,11 @@
 
 
 	<div class="header"> 
-        <div id="name"> <a href="home.php">DevClub</a>  </div>
+        <div id="name"> <a href="index.php">DevClub</a>  </div>
 		<div id="topmenu"> 
 		<?php	if(isset($_SESSION['logged_in']) && !empty($_SESSION['logged_in'])){?>
 			
-			  <a href="logout.php">Logout</a> 
+			  <a href="logout.php">Logout</a> | <a href="reset.php">Reset Password</a>
 			  <?php 
 
 ?> 
