@@ -1,6 +1,11 @@
 <?php session_start();
 
 ?>
+<?php if(!isset($_SESSION['login_time'])){
+	$_SESSION['error'] = "You are not authorised to view this page! ";
+	header('Location: adminLogin.php');
+	die();
+} ?>
 
 <!DOCTYPE html> 
 <html>
