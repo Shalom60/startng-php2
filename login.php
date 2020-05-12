@@ -3,7 +3,7 @@
 require_once("functions/alert.php");
 require_once("functions/user.php");
 ?>
-<link href="style.css"  rel="stylesheet"/>
+<link href="login.css"  rel="stylesheet"/>
     <form action="processLogin.php" method="POST">
 	<h1>Login to your account</h1>
     <p1> <?php
