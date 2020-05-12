@@ -20,21 +20,9 @@ require_once("functions/user.php");
 
 <?php $email =  $_SESSION['email'];
 
-      //     $all_transactions = scandir("db/transactions/");
-
-      //     for($counter=1; $counter< count($all_transactions)-1; $counter++){
-      //   	$string= file_get_contents("db/transactions/".$counter.".json");
-			//  $transaction_Object = json_decode($string);
-          
-      //      if($transaction_Object->paid == $email){?>
-      <!-- //     <ul> -->
-      <!-- //     <li> Paid appointment fee </li> -->
-      <!-- //     </ul> --> <?php 
-      //      }
-      //      } ?>
- <?php  $message = "Paid appointment fee ";
  appointment_fee();
-?>
+
+ ?>
 
   <?php
 include_once("lib/footer.php");

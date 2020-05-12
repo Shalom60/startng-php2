@@ -28,7 +28,7 @@ echo  "<span style ='font-size:25px;'>".  "&nbsp &nbspList of all Members". "</s
  
   $i+=1;
   ?>
-                <table    border="1" style="width:100%">   
+                <table    border="1" style="width:100%; border-collapse:collapse">   
                  <tr> 
               <td style="width:25px"><?php echo $i;?>
                <td style="width:200px"><?php  print $userObject->firstname." " .$userObject->lastname; ?>
@@ -43,7 +43,7 @@ echo  "<span style ='font-size:25px;'>".  "&nbsp &nbspList of all Members". "</s
  }
 
  $i=0; echo "<br>";
- //list out the details of all the members
+ //list out the details of all the developers
 echo "<span style ='font-size:25px;'>". "&nbsp &nbspList of all Developers". "</span>";
 table_users();
 for($counter=2; $counter< count($allUsers); $counter++){
@@ -52,7 +52,7 @@ $userObject = json_decode($userString);
 if($userObject->role == "Developer"){
   $i+=1;
 ?>
-   <table    border="1" style="width:100%">   
+   <table   border="1" style="width:100%; border-collapse:collapse">   
     <tr> 
  <td style="width:25px"><?php echo $i;?>
   <td style="width:200px"><?php  print $userObject->firstname." ".$userObject->lastname; ?>

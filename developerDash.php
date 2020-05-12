@@ -31,15 +31,15 @@ require_once("functions/user.php");
             $fileObject = json_decode($appointments_String);
              
             ?>
-                  <table    border="1" style="width:100%">   
+                  <table    border="0" style="width:100%; border-collapse:collapse">   
               <tr> 
-              <td style="width:25px"><?php echo $i;?>
-              <td style="width:200px"><?php  print $fileObject->fullname; ?>
-              <td style="width:200px"><?php  print $fileObject->email; ?>
-              <td style="width:200px"><?php  print $fileObject->date; ?>
-              <td style="width:200px"><?php  print $fileObject->time; ?>
-              <td style="width:200px"><?php  print $fileObject->nature; ?>
-              <td style="width:200px"><?php  print $fileObject->initial_complaint; ?>
+              <td style="width:3%"><?php echo $i;?>
+              <td style="width:15%"><?php  print $fileObject->fullname; ?>
+              <td style="width:12%"><?php  print $fileObject->email; ?>
+              <td style="width:15%"><?php  print $fileObject->date; ?>
+              <td style="width:8%"><?php  print $fileObject->time; ?>
+              <td style="width:15%"><?php  print $fileObject->nature; ?>
+              <td style="width:22%"><?php  print $fileObject->initial_complaint; ?>
               <?php 
                             payment( $fileObject->email); ?>
                                   </tr>
@@ -64,15 +64,15 @@ require_once("functions/user.php");
                   $fileObject =json_decode($appointments_String);
                                   
                   ?>
-                        <table    border="1" style="width:100%">   
+         <table  border="1"   style="width:100%; border-collapse:collapse" >   
                     <tr> 
-                    <td style="width:25px"><?php echo $i;?>
-                    <td style="width:200px"><?php  print $fileObject->fullname; ?>
-                    <td style="width:200px"><?php  print $fileObject->email; ?>
-                    <td style="width:200px"><?php  print $fileObject->date; ?>
-                    <td style="width:200px"><?php  print $fileObject->time; ?>
-                    <td style="width:200px"><?php  print $fileObject->nature; ?>
-                    <td style="width:200px"><?php  print $fileObject->initial_complaint; ?>
+                    <td style="width:3%" style="color: pink" ><?php echo $i;?>
+                    <td style="width:15%"><?php  print $fileObject->fullname; ?>
+                    <td style="width:12%"><?php  print $fileObject->email; ?>
+                    <td style="width:15%"><?php  print $fileObject->date; ?>
+                    <td style="width:8%"><?php  print $fileObject->time; ?>
+                    <td style="width:15%"><?php  print $fileObject->nature; ?>
+                    <td style="width:22%"><?php  print $fileObject->initial_complaint; ?>
                     <?php 
                             payment( $fileObject->email); ?>
 
@@ -100,7 +100,7 @@ require_once("functions/user.php");
                             $fileObject = json_decode($appointments_String);
                           
                           ?>
-                                  <table    border="1" style="width:100%">   
+                                  <table    border="1" style="width:100%; border-collapse:collapse">   
                               <tr> 
                               <td style="width:25px"><?php echo $i;?>
                               <td style="width:200px"><?php  print $fileObject->fullname; ?>
@@ -135,7 +135,7 @@ require_once("functions/user.php");
                   $fileObject =json_decode($appointments_String);
                                     
                   ?>
-                        <table    border="1" style="width:100%">   
+                        <table    border="1" style="width:100%; border-collapse:collapse">   
                     <tr> 
                     <td style="width:25px"><?php echo $i;?>
                     <td style="width:200px"><?php  print $fileObject->fullname; ?>
