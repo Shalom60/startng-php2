@@ -4,7 +4,7 @@ require_once("functions/alert.php");
 ?>
    <div id="section">
 	<h1>Register and join us at DevClub</h1>
-	<link href="css/reg.css"  rel="stylesheet"/> 
+	<link href="reg.css"  rel="stylesheet"/> 
 	<form action="processReg.php" method="POST" id="form">
 	<p> Please fill out the details bellow. All fields are required.</p>
 	<p1> <?php
