@@ -69,7 +69,24 @@ if($userObject->role == "Developer"){
 
 <h3>Transactions</h3>
 <?php
-  
+    
+    $all_transactions = scandir("db/transactions/");
+
+    for($counter=1; $counter< count($all_transactions)-1; $counter++){
+      $string= file_get_contents("db/transactions/".$counter.".json");
+       $transaction = json_decode($string);
+     if($counter==1){?>
+    <ul>
+    <li> <?php  echo $transaction[0]->email. ":"?> paid appointment fee. </li>
+    </ul> <?php
+     }
+     else {?>
+        <ul>
+        <li> <?php  echo $transaction->email. ":"?> paid appointment fee. </li>
+        </ul> <?php
+         }
+     } 
+
    
 ?>
  

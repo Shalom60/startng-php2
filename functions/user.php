@@ -39,12 +39,16 @@ function appointment_fee(){
     for($counter=1; $counter< count($all_transactions)-1; $counter++){
       $string= file_get_contents("db/transactions/".$counter.".json");
        $transaction = json_decode($string);
-
-     if($email ==$transaction[0]->email){?>
+     if($counter==1){?>
     <ul>
     <li> <?php  echo $transaction[0]->time. ":"?> Paid appointment fee. </li>
     </ul> <?php
      }
+     else {?>
+        <ul>
+        <li> <?php  echo $transaction->time. ":"?> Paid appointment fee. </li>
+        </ul> <?php
+         }
      } 
 
 }
