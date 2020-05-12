@@ -5,7 +5,7 @@ require_once("functions/alert.php");
 ?>
 <div id="section">
 <h1>Book Appointment</h1>
-	<link href="css/book_appoint.css"  rel="stylesheet"/> 
+	<link href="book_appoint.css"  rel="stylesheet"/> 
 	<form action="process_book_appointment.php" method="POST">
 	<p> Please fill out the details bellow. All fields are required.</p>
 	<p1> <?php
